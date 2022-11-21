@@ -1,0 +1,154 @@
+@use "./variables";
+
+.img{ 
+    height: 590px;
+    width: 100vw;
+    opacity: 0.6;
+}
+.container-fluid{
+    padding: 0px;
+}
+.container-titulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 250px;
+        .titulo-hola{
+            color: rgb(221, 221, 221);
+            font-size: 32px;
+        }
+        .titulo-diseniador{
+            font-size: 32px;
+            font-family: 'DM Mono', monospace;;
+            color: rgb(221, 221, 221);
+            position: relative;
+            top: 10px;
+        }
+
+}
+
+.container-CTA{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 190px;
+    .mail{
+        position: relative;
+        right: 50px;    
+    }
+    .linkedin {
+        position: relative;
+        left: 50px;
+    }
+    .icon{
+        width: 40px;
+        height: fit-content;
+    }
+}
+
+
+.div-containerIndex{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    .div-unoIndex, .div-dosIndex, .div-tresIndex{
+        width: 203px;
+        height: 363px;
+        background-color: transparent;
+    /*     box-shadow:5px 5px 10px; */
+    }
+    .div-unoIndex{
+        background-image: url(../img/Designproto.png);
+        background-size: contain;
+    }
+    .div-dosIndex{
+        background-image: url(../img/Celiapp.png);
+        background-size: contain;
+    }
+    .div-tresIndex{
+        background-image: url(../img/Amazon.png);
+        background-size: contain;
+    }
+    /* CARDs*/
+    .cardindex {
+        border: 0px;
+        width: 203px;
+        height: 360px;
+        background-image: linear-gradient(163deg, #fdfdfd 20%, #680000 100%);
+        border-radius: 20px;
+        transition: all .3s;
+        margin-top: 20px;
+    }
+       
+    .cardindex2 {
+        transition: all .2s;
+    }
+       
+    .cardindex2:hover {
+        transform: scale(0.98);
+        border-radius: 20px;
+    }
+       
+    .cardindex:hover {
+        box-shadow: 0px 0px 30px 1px rgba(172, 1, 1, 0.3);
+    }
+    
+
+}
+
+
+@media (max-width: 768px){
+    .img{ 
+        height: 450px;
+        width: 100vw;
+        opacity: 0.6;
+    }
+    .container-titulos{
+        bottom: 270px;
+        .titulo-hola{
+            font-size: 15px;
+        }
+        .titulo-diseniador{
+            font-size: 15px;
+    }
+    
+    }
+    .container-CTA{
+        bottom: 200px;
+    }
+    .card {
+        border: 0px;
+        width: 204px;
+        height: 364px;
+    }
+    .heightCardIndex{
+        width: 204px;
+        height: 364px;
+    }
+    .div-containerIndex{
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .div-unoIndex, .div-dosIndex, .div-tresIndex{
+        flex-direction: row;
+    }
+    footer{
+        margin-top: 620px;
+    }
+}
+@media (min-width: 1024px){
+    .img{ 
+        height: 590px;
+        width: 100%;
+        opacity: 0.6;
+    }
+    
+}

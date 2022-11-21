@@ -1,0 +1,347 @@
+/* En este archivo puedo poner todas las variables que se me ocurran y cuando lo quiera usar en otro archivo 
+SASS lo unico que hago es importarlo con "use" al igual que en el main.scss  */
+.img {
+  height: 590px;
+  width: 100vw;
+  opacity: 0.6;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+.container-titulos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 250px;
+}
+.container-titulos .titulo-hola {
+  color: rgb(221, 221, 221);
+  font-size: 32px;
+}
+.container-titulos .titulo-diseniador {
+  font-size: 32px;
+  font-family: "DM Mono", monospace;
+  color: rgb(221, 221, 221);
+  position: relative;
+  top: 10px;
+}
+
+.container-CTA {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 190px;
+}
+.container-CTA .mail {
+  position: relative;
+  right: 50px;
+}
+.container-CTA .linkedin {
+  position: relative;
+  left: 50px;
+}
+.container-CTA .icon {
+  width: 40px;
+  height: fit-content;
+}
+
+.div-containerIndex {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+  /* CARDs*/
+}
+.div-containerIndex .div-unoIndex, .div-containerIndex .div-dosIndex, .div-containerIndex .div-tresIndex {
+  width: 203px;
+  height: 363px;
+  background-color: transparent;
+  /*     box-shadow:5px 5px 10px; */
+}
+.div-containerIndex .div-unoIndex {
+  background-image: url(../img/Designproto.png);
+  background-size: contain;
+}
+.div-containerIndex .div-dosIndex {
+  background-image: url(../img/Celiapp.png);
+  background-size: contain;
+}
+.div-containerIndex .div-tresIndex {
+  background-image: url(../img/Amazon.png);
+  background-size: contain;
+}
+.div-containerIndex .cardindex {
+  border: 0px;
+  width: 203px;
+  height: 360px;
+  background-image: linear-gradient(163deg, #fdfdfd 20%, #680000 100%);
+  border-radius: 20px;
+  transition: all 0.3s;
+  margin-top: 20px;
+}
+.div-containerIndex .cardindex2 {
+  transition: all 0.2s;
+}
+.div-containerIndex .cardindex2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+.div-containerIndex .cardindex:hover {
+  box-shadow: 0px 0px 30px 1px rgba(172, 1, 1, 0.3);
+}
+
+@media (max-width: 768px) {
+  .img {
+    height: 450px;
+    width: 100vw;
+    opacity: 0.6;
+  }
+  .container-titulos {
+    bottom: 270px;
+  }
+  .container-titulos .titulo-hola {
+    font-size: 15px;
+  }
+  .container-titulos .titulo-diseniador {
+    font-size: 15px;
+  }
+  .container-CTA {
+    bottom: 200px;
+  }
+  .card {
+    border: 0px;
+    width: 204px;
+    height: 364px;
+  }
+  .heightCardIndex {
+    width: 204px;
+    height: 364px;
+  }
+  .div-containerIndex {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .div-unoIndex, .div-dosIndex, .div-tresIndex {
+    flex-direction: row;
+  }
+  footer {
+    margin-top: 620px;
+  }
+}
+@media (min-width: 1024px) {
+  .img {
+    height: 590px;
+    width: 100%;
+    opacity: 0.6;
+  }
+}
+.sectionServicios {
+  height: 80vh;
+}
+
+.div-dos {
+  margin-top: 20px;
+  color: #000;
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-container {
+  height: 400px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .div-container {
+    flex-direction: column;
+    height: fit-content;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  .div-container {
+    position: absolute;
+    bottom: 150px;
+  }
+}
+.card {
+  width: 381px;
+  height: 254px;
+  border-radius: 50px;
+  background-image: url(../img/uxui.webp);
+  background-size: cover;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  margin-top: 20px;
+}
+
+.card2 {
+  width: 381px;
+  height: 254px;
+  border-radius: 20px;
+  background-image: url(../img/programacion.jpeg);
+  background-size: cover;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-details {
+  color: black;
+  height: 100%;
+  gap: 0.5em;
+  display: grid;
+  place-content: center;
+}
+
+.card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #141414;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.text-body, .text-body2 {
+  color: rgb(134, 134, 134);
+  font-weight: bold;
+  text-align: center;
+}
+
+.text-body2 {
+  color: rgb(173, 173, 173);
+}
+
+/*Text*/
+.text-title, .text-title2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.text-title2 {
+  color: white;
+}
+
+/*Hover*/
+.card:hover, .card2:hover {
+  border-color: #680000;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
+.divContainerSobremi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divSobremi {
+  width: 300px;
+  height: 205px;
+  background-image: url(../img/fotoFormal.png);
+  background-size: cover;
+}
+
+.divsaboutme {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.h2QuienSoy {
+  color: #fff;
+  font-size: 20px;
+}
+
+.parrafo {
+  color: #fff;
+  font-size: 14px;
+  text-align: justify;
+}
+
+#mainSobremi {
+  height: 80vh;
+}
+
+.maincontacto {
+  height: 75vh;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(78, 4, 4) 0%, rgb(2, 0, 36) 100%);
+}
+
+.navbar {
+  background: rgb(46, 4, 4);
+  background: linear-gradient(90deg, rgba(46, 4, 4, 0.8631827731) 0%, rgba(2, 0, 36, 0.4458158263) 100%);
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+#navbarNav {
+  justify-content: space-around;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-toggler, .button.navbar-toggler.collapsed {
+  background-color: #999999;
+  color: white;
+}
+
+/* CLASE GENERAL */
+.t-center {
+  text-align: center;
+}
+
+.espaciado {
+  margin-top: 20px;
+}
+
+.title {
+  color: rgb(221, 221, 221);
+}
+
+section {
+  height: 95vh;
+}
+
+/*# sourceMappingURL=estilos.css.map */

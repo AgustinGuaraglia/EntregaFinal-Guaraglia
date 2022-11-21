@@ -1,0 +1,44 @@
+@use "./partials/_index.scss";
+@use "./partials/_servicios.scss";
+@use "./partials/_sobreMi.scss";
+@use "./partials/_contacto.scss";
+
+
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(78,4,4,1) 0%, rgba(2,0,36,1) 100%);
+}
+.navbar{
+    background: rgb(46,4,4);
+    background: linear-gradient(90deg, rgba(46,4,4,0.8631827731092436) 0%, rgba(2,0,36,0.4458158263305322) 100%);
+}
+.navbar-nav {
+    align-items: center;
+}
+#navbarNav {
+    justify-content: space-around;
+
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: rgb(255 255 255 / 100%);
+}
+.navbar-toggler, .button.navbar-toggler.collapsed{
+    background-color: #999999;
+    color: white;
+}
+/* CLASE GENERAL */
+.t-center{
+    text-align: center;
+}
+.espaciado{
+    margin-top: 20px;
+}
+.title{
+    color: rgb(221, 221, 221);
+}
+
+section{
+    height: 95vh;  
+}
+
