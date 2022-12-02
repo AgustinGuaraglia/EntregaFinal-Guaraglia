@@ -1,5 +1,4 @@
 .img {
-  height: 100vh;
   width: 100vw;
   opacity: 0.6;
 }
@@ -99,12 +98,11 @@
 
 @media (max-width: 768px) {
   .img {
-    height: 50vh;
     width: 100vw;
     opacity: 0.6;
   }
   .container-titulos {
-    bottom: 270px;
+    bottom: 124px;
   }
   .container-titulos .titulo-hola {
     font-size: 15px;
@@ -113,7 +111,7 @@
     font-size: 15px;
   }
   .container-CTA {
-    bottom: 200px;
+    bottom: 106px;
   }
   .card {
     border: 0px;
