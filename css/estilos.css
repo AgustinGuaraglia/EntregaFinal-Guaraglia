@@ -1,7 +1,12 @@
-/* En este archivo puedo poner todas las variables que se me ocurran y cuando lo quiera usar en otro archivo 
-SASS lo unico que hago es importarlo con "use" al igual que en el main.scss  */
+section {
+  height: 100vh;
+}
+
+/* body{
+    overflow: hidden;
+} */
 .img {
-  height: 590px;
+  height: 90vh;
   width: 100vw;
   opacity: 0.6;
 }
@@ -52,6 +57,7 @@ SASS lo unico que hago es importarlo con "use" al igual que en el main.scss  */
 }
 
 .div-containerIndex {
+  margin-bottom: 40px;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -100,7 +106,7 @@ SASS lo unico que hago es importarlo con "use" al igual que en el main.scss  */
 
 @media (max-width: 768px) {
   .img {
-    height: 450px;
+    height: 90vh;
     width: 100vw;
     opacity: 0.6;
   }
@@ -132,51 +138,15 @@ SASS lo unico que hago es importarlo con "use" al igual que en el main.scss  */
   .div-unoIndex, .div-dosIndex, .div-tresIndex {
     flex-direction: row;
   }
-  footer {
-    margin-top: 620px;
+  .footerIndex {
+    margin-top: 750px;
   }
 }
 @media (min-width: 1024px) {
   .img {
-    height: 590px;
+    height: 90vh;
     width: 100%;
     opacity: 0.6;
-  }
-}
-.sectionServicios {
-  height: 80vh;
-}
-
-.div-dos {
-  margin-top: 20px;
-  color: #000;
-  font-size: x-large;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.div-container {
-  height: 400px;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
-@media (max-width: 768px) {
-  .div-container {
-    flex-direction: column;
-    height: fit-content;
-    justify-content: space-between;
-  }
-}
-@media (min-width: 1024px) {
-  .div-container {
-    position: absolute;
-    bottom: 150px;
   }
 }
 .card {
@@ -261,6 +231,46 @@ SASS lo unico que hago es importarlo con "use" al igual que en el main.scss  */
   opacity: 1;
 }
 
+.div-dos {
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-container {
+  height: 400px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .div-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 300px;
+    height: 188px;
+    border-radius: 20px;
+  }
+  .text-title2 {
+    font-weight: 400;
+    color: white;
+  }
+}
+@media (min-width: 1024px) {
+  /*     .div-container{
+          position: absolute;
+          height: 100vh;
+      } */
+  section {
+    overflow: hidden;
+  }
+}
 .divContainerSobremi {
   display: flex;
   flex-direction: column;
@@ -298,6 +308,10 @@ SASS lo unico que hago es importarlo con "use" al igual que en el main.scss  */
 
 .maincontacto {
   height: 75vh;
+}
+
+.body {
+  overflow-x: hidden;
 }
 
 body {
@@ -338,10 +352,6 @@ body {
 
 .title {
   color: rgb(221, 221, 221);
-}
-
-section {
-  height: 95vh;
 }
 
 /*# sourceMappingURL=estilos.css.map */

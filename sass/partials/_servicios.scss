@@ -1,41 +1,3 @@
-.sectionServicios{
-    height: 80vh;
-}
-.div-dos{
-    margin-top: 20px;
-    color: #000;
-    font-size: x-large;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.div-container{
-    height: 400px;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-
-}
-
-@media (max-width: 768px){
-    .div-container{ 
-        flex-direction: column;
-        height: fit-content;
-        justify-content: space-between;
-    }
-}
-@media (min-width:1024px){
-    .div-container{
-        position: absolute;
-        bottom: 150px;
-    }
-}
-
 
 
 .card {
@@ -122,3 +84,51 @@
     opacity: 1;
 }
 
+
+
+
+
+.div-dos{
+
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.div-container{
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+@media (max-width: 768px){
+    .div-container{ 
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 300px;
+        height: 188px;
+        border-radius: 20px;
+    }
+    .text-title2{
+        font-weight: 400;
+        color: white;
+    }
+}
+@media (min-width:1024px){
+/*     .div-container{
+        position: absolute;
+        height: 100vh;
+    } */
+    section{
+        overflow: hidden;
+    }
+
+}

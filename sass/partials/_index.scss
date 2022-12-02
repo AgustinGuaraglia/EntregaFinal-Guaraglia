@@ -1,7 +1,12 @@
-@use "./variables";
+section{
+    height: 100vh;
+}
+/* body{
+    overflow: hidden;
+} */
 
 .img{ 
-    height: 590px;
+    height: 90vh;
     width: 100vw;
     opacity: 0.6;
 }
@@ -52,6 +57,7 @@
 
 
 .div-containerIndex{
+    margin-bottom: 40px;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -105,8 +111,9 @@
 
 
 @media (max-width: 768px){
+
     .img{ 
-        height: 450px;
+        height: 90vh;
         width: 100vw;
         opacity: 0.6;
     }
@@ -140,13 +147,13 @@
     .div-unoIndex, .div-dosIndex, .div-tresIndex{
         flex-direction: row;
     }
-    footer{
-        margin-top: 620px;
+    .footerIndex{
+        margin-top: 750px;
     }
 }
 @media (min-width: 1024px){
     .img{ 
-        height: 590px;
+        height: 90vh;
         width: 100%;
         opacity: 0.6;
     }

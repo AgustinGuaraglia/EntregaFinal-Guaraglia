@@ -5,7 +5,11 @@
 
 
 
+.body{
+    overflow-x: hidden;
+}
 body{
+    
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(78,4,4,1) 0%, rgba(2,0,36,1) 100%);
 }
@@ -38,7 +42,6 @@ body{
     color: rgb(221, 221, 221);
 }
 
-section{
-    height: 95vh;  
-}
+
+
 
